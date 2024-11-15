@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #fefefe;
+    padding-top: 4%;
+    padding-inline: 5%;
+}
+
+.container h1{
+    font-size: 35px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    color: #130340;
+    text-transform: uppercase;
+}
+
+.container h1 i{
+    font-size: 50px;
+    margin-right: 5px;
+    color: #130340;
+    margin-right: 20px;
+}
+
+
+.input-notes{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 5px;
+    border: 1px groove gray;
+    border-radius: 15px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    background: #130340;
+    box-shadow: 0 0 15px grey;
+    user-select: none;
+}
+.input-notes .input{
+    flex: 1;
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    color: #040442;
+    border-radius: 15px;
+    box-shadow: 0 0 15px grey;
+}
+
+.input-notes .input::placeholder{
+    padding: 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgb(174, 170, 170);
+}
+.input-notes .btn{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 15px;
+    margin-left: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #040442;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.824);
+    transition: 0.5s;
+}
+
+.input-notes .btn:hover{
+    color: #fefefe;
+    background: #52ab03;
+}
+
+.error-message{
+    font-size: 18px;
+    color: red;
+    padding: 50px;
+    display: none;
+    
+}
+
+.all-note-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+}
+
+.notes-container{
+    display: flex;
+    max-width:max-content;
+    min-height: 150px;
+    border: 1px groove #040442;
+    border-radius: 8px;
+    box-shadow: 0 0 15px #0a0aa2;
+    background: #fff;
+    
+}
+
+.delete-btn {
+    width:40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    margin: 27px 15px;
+    padding-top: 8px;
+    color: #130340;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.delete-btn:hover{
+    background-color: #040442;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.note[contenteditable="true"]{
+    outline: none;
+}
+
+.note{
+    padding: 10px;
+    width: 420px;
+    margin-top: 20px;
+}
+
+.input-box{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #130340;
+    outline: none;
+    text-transform:capitalize;
+    line-height: 1.5rem;
+    text-align: justify;
+}
